@@ -1,20 +1,30 @@
-Your GitHub account showing that is has been forked from the depaulcdm/springpetclinic repository. This doesn’t actually need an image – I can see it from your repository.
-DONE!
-Your GitHub Actions dashboard showing a successful first build.
-![Screen Capture #1](images/question2.PNG)
-Your GitHub repository with the readme.md file selected showing the code that you changed to update the badge.
-![Screen Capture #1](images/question3.PNG)
-Your GitHub repository with the readme.md file selected showing the build success status after you’ve updated the badge markdown.
-![Screen Capture #1](images/question4.PNG)
-The section of the POM file showing the coordinates after you’ve commented them out.
-![Screen Capture #1](images/question5.PNG)
-Your GitHub Actions dashboard showing the unsuccessful build after the breaking change.
-![Screen Capture #1](images/question6.PNG)
-Your GitHub repository with the readme.md file selected showing the build failed status after the GitHub workflow fails.
-![Screen Capture #1](images/question7.PNG)
-The section of the POM file showing the coordinates after you’ve fixed them.
-![Screen Capture #1](images/question8.PNG)
-Your GitHub Actions dashboard showing the successful build after the breaking change has been fixed.
-![Screen Capture #1](images/question9.PNG)
-Your GitHub repository with the readme.md file selected showing the build success status after the GitHub workflow has recovered.
-![Screen Capture #1](images/question10.PNG)
+DOCKER
+5 pts Your dockerfile. Please provide a link to this file rather than a screen capture.
+5 pts Your running docker instance as shown by a ps command.
+![Screen Capture #1](images/q2.PNG)
+5 pts Your browser accessing the main page of the website from your local container.
+![Screen Capture #1](images/q3.PNG)
+
+DOCKER COMPOSE - MYSQL ONLY
+5 pts The output from the docker-compose up command.
+![Screen Capture #1](images/q4.PNG)
+5 pts Your browser accessing the “Veterinarians” page of the website from your local container
+when you run the application from the host system.
+![Screen Capture #1](images/q5.PNG)
+5 pts A section of the stack trace generated when you attempt to run the application
+container that has been updated to use MySQL.
+![Screen Capture #1](images/q6.PNG)
+
+DOCKER COMPOSE - APP SERVER AND MYSQL
+5 pts Your updated docker-compose.yml file containing the application server, built from
+your local Dockerfile, and the existing MySQL configuration. Please provide a link
+to this file rather than a screen capture.
+5 pts Your updated application-mysql.properties file containing the URL change for
+the database server. Please provide a link to this file rather than a screen capture.
+5 pts The output from the docker-compose up command.
+KEPT GETTING ERROR AFTER UPDATING
+![Screen Capture #1](images/q7.PNG)
+5 pts Your browser accessing the “Veterinarians” page of the website from your local container.
+
+docker build . -f Dockerfile.txt -t se441/spring-petclinic:mysql
+docker run --rm -p 8484:8080/tcp se441/spring-petclinic:standalone
